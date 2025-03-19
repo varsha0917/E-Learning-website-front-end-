@@ -37,3 +37,8 @@ E-Learning Hub is a front-end prototype of an interactive e-learning platform. I
 - **Videos:** Replace the YouTube video link with any educational content of your choice.
 - **Styling:** Modify the styles inside the `<style>` tag for a personalized look.
 
+##Output
+![Image](https://github.com/user-attachments/assets/4dcc5d44-55c8-4bfd-9687-beeb63d9c76a)
+
+![Image](https://github.com/user-attachments/assets/c1a92914-1778-4c86-b8fb-6742a07b087a)
+
