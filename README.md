@@ -1,44 +1,30 @@
-# E-Learning-website(frontend)
+# 📘 LearnX - E-Learning Platform (Frontend)
 
-COMPANY: CODTECH IT SOLUTIONS
+LearnX is a modern E-Learning Platform built with HTML, CSS, and JavaScript.  
+It provides users with an engaging way to **login, explore courses, track progress, and learn online.
 
-NAME: Parveda Varsha
-
-INTERN ID: CT04WJ56
-
-DOMAIN: Frontend Web Development
-
-DURATION: 4 WEEKS
-
-MENTOR: NEELA SANTOSH
-
-# E-Learning Hub
-
-E-Learning Hub is a front-end prototype of an interactive e-learning platform. It includes essential features like course listing, progress tracking, and video embedding, making it a comprehensive and attractive solution for online learning.
-
-## 📁 Project Structure
-- `index.html`: Main HTML file containing the multi-page interface.
-- Inline CSS styling for easy customization.
+---
 
 ## 🚀 Features
-- **Responsive Design:** Adapts to various screen sizes for accessibility.
-- **Course Listing:** Displays multiple courses with brief descriptions.
-- **Progress Tracking:** Visual progress bars for tracking learning completion.
-- **Video Embedding:** Embedded YouTube videos for interactive learning.
+- 🔑 Login & Signup System** (front-end based)
+- 🎨 Modern UI with Animations** (fade, slide, zoom effects)
+- 🏠 Home Page – Welcome users with platform info
+- 📚 Courses Page – Explore structured learning modules (HTML, JS, Python, etc.)
+- ℹ️ About Page – Learn more about the platform
+- 📩 Contact Page – Simple form to reach out
+- 📱 Responsive Design – Works on desktop and mobile
 
-## 🔧 How to Use
-1. Clone or download the repository.
-2. Open the `index.html` file in any modern web browser.
-3. Customize the profile photo and course details as needed.
+---
 
-## 💡 Customization
-- **Courses:** Update the course names and descriptions in the HTML code.
-- **Progress:** Adjust the width of progress bars in the `.progress-bar div` style.
-- **Videos:** Replace the YouTube video link with any educational content of your choice.
-- **Styling:** Modify the styles inside the `<style>` tag for a personalized look.
+## 📂 Project Structure
+project/
+│── index.html # Login / Signup Page
+│── home.html # Dashboard (after login)
+│── courses.html # Explore available courses
+│── about.html # About the platform
+│── contact.html # Contact form
+│── style.css # Styling & animations
+│── script.js # JS for login/signup & interactions
+│── README.md # Documentation
 
-##Output
-![Image](https://github.com/user-attachments/assets/4dcc5d44-55c8-4bfd-9687-beeb63d9c76a)
-
-![Image](https://github.com/user-attachments/assets/c1a92914-1778-4c86-b8fb-6742a07b087a)
-
+#images
