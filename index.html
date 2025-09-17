@@ -1,138 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-Learning Hub</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            color: #333;
-        }
-        header {
-            background-color: #1e90ff;
-            padding: 20px;
-            text-align: center;
-            color: white;
-            font-size: 2.5em;
-            font-weight: bold;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #333;
-            padding: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-        }
-        nav a {
-            color: white;
-            margin: 0 20px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: color 0.3s;
-            font-size: 1.2em;
-        }
-        nav a:hover {
-            color: #1e90ff;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 30px auto;
-            padding: 20px;
-            background-color: white;
-            border-radius: 12px;
-            box-shadow: 0 6px 10px rgba(0,0,0,0.1);
-        }
-        .course-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 25px;
-        }
-        .course-card {
-            background-color: #f9f9f9;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            text-align: center;
-            transition: transform 0.3s;
-        }
-        .course-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 12px rgba(0,0,0,0.2);
-        }
-        .progress-bar {
-            background-color: #ddd;
-            border-radius: 20px;
-            margin: 15px 0;
-            padding: 5px;
-        }
-        .progress-bar div {
-            height: 20px;
-            background-color: #1e90ff;
-            width: 70%;
-            border-radius: 15px;
-            text-align: center;
-            color: white;
-            font-weight: bold;
-        }
-        iframe {
-            width: 100%;
-            height: 315px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 15px;
-            margin-top: 20px;
-            box-shadow: 0 -4px 6px rgba(0,0,0,0.2);
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LearnX - Login / Signup</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <header>E-Learning Hub</header>
-    <nav>
-        <a href="#courses">Courses</a>
-        <a href="#progress">Progress</a>
-        <a href="#videos">Videos</a>
-    </nav>
-    <div class="container" id="courses">
-        <h2>Explore Our Courses</h2>
-        <div class="course-list">
-            <div class="course-card">
-                <h3>Web Development</h3>
-                <p>Learn HTML, CSS, and JavaScript to create modern, responsive websites.</p>
-            </div>
-            <div class="course-card">
-                <h3>Data Science</h3>
-                <p>Master data analysis, visualization, and machine learning techniques with Python.</p>
-            </div>
-            <div class="course-card">
-                <h3>Cybersecurity</h3>
-                <p>Understand network security, encryption, and ethical hacking practices.</p>
-            </div>
-            <div class="course-card">
-                <h3>Artificial Intelligence</h3>
-                <p>Dive deep into AI concepts, neural networks, and model optimization.</p>
-            </div>
-        </div>
-    </div>
-    <div class="container" id="progress">
-        <h2>Your Progress</h2>
-        <p>Progress in Web Development:</p>
-        <div class="progress-bar"><div style="width: 70%;">70%</div></div>
-        <p>Progress in Data Science:</p>
-        <div class="progress-bar"><div style="width: 50%;">50%</div></div>
-    </div>
-    <div class="container" id="videos">
-        <h2>Learning Videos</h2>
-        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
-    </div>
-    <footer>&copy; 2025 E-Learning Hub | All Rights Reserved</footer>
+<body class="auth-page">
+  <div class="auth-container animate-fade">
+    <h1>Welcome to LearnX 📘</h1>
+    <p>A platform to explore, learn, and grow your skills.</p>
+    <form id="loginForm">
+      <input type="text" id="username" placeholder="Username" required>
+      <input type="password" id="password" placeholder="Password" required>
+      <button type="submit">Login</button>
+    </form>
+    <p>Don’t have an account? <a href="#" id="signupLink">Signup</a></p>
+  </div>
+
+  <div class="auth-container animate-slide hidden" id="signupBox">
+    <h1>Create Your Account</h1>
+    <form id="signupForm">
+      <input type="text" id="newUser" placeholder="Username" required>
+      <input type="password" id="newPass" placeholder="Password" required>
+      <button type="submit">Signup</button>
+    </form>
+    <p>Already registered? <a href="#" id="loginLink">Login</a></p>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
